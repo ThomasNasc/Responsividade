@@ -1,0 +1,253 @@
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600&display=swap');
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    
+    section {
+        background: #FEFAF9;
+        background: linear-gradient( 135deg, hsl(0, 0%, 100%) 50%, hsl(0, 100%, 98%));
+        padding-bottom: 100%;
+    }
+    
+    header {
+        width: 100%;
+        height: 10%;
+        background-color: transparent;
+        padding: 10px;
+        margin: 15px;
+    }
+    
+    header img {
+        width: 20%;
+        min-width: 100px;
+        height: auto;
+        background-color: transparent;
+    }
+    
+    section #mobile {
+        width: 100%;
+    }
+    
+    #desktop {
+        display: none;
+    }
+    
+    section #conteudo {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        color: #C59A9C;
+        font-size: 40px;
+        letter-spacing: 8px;
+        margin-top: 10%;
+    }
+    
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 8px;
+    }
+    
+    #conteudo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #D3B5B8;
+        font-size: 16px;
+        text-align: center;
+        margin: 8%;
+        font-weight: 400;
+        margin-top: 5%;
+    }
+    
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        max-width: 400px;
+        position: relative;
+    }
+    
+    div input {
+        width: 100%;
+        height: 50px;
+        border-radius: 40px 0px 0px 40px;
+        font-size: 14px;
+        padding-left: 15px;
+        border-color: #D3B5B8;
+        border-style: solid;
+        outline: none;
+        max-width: 400px;
+    }
+    
+    div input::placeholder {
+        color: #D3B5B8;
+    }
+    
+    div button {
+        width: 80px;
+        height: 50px;
+        position: absolute;
+        right: -40px;
+        border-radius: 30px;
+        border-color: transparent;
+        background: hsl(0, 6%, 24%);
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), 50%, hsl(0, 74%, 74%));
+        color: transparent;
+    }
+    
+    div button:hover {
+        background: #FAD6D6;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.329);
+        cursor: pointer;
+    }
+    
+    div input:focus {
+        border: 3px solid #b89ea1;
+    }
+    
+    div #pos {
+        width: 100%;
+        margin: 0;
+    }
+    
+    div #error {
+        position: absolute;
+        right: 60px;
+        display: flex;
+    }
+    
+    section #text {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        margin-top: 10px;
+        padding-left: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+        color: #D3B5B8;
+    }
+    
+    @media screen and (min-width: 992px) {
+        body {
+            max-width: 1500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #F0F0F0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        section #mobile {
+            display: none;
+        }
+        header {
+            width: 30%;
+            height: auto;
+            padding: 10px;
+            margin: 0px;
+            margin-top: 9%;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        #desktop {
+            display: flex;
+            width: 40%;
+        }
+        section {
+            flex-direction: column;
+            padding-left: 10%;
+            width: 70%;
+            display: inline;
+            background-image: url(images/bg-pattern-desktop.svg);
+            background-size: 100%;
+            padding-bottom: 0;
+            background-color: #FFF9F9;
+        }
+        h1,
+        h2,
+        #conteudo {
+            display: flex;
+            text-align: initial;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-left: auto;
+        }
+        h1 {
+            margin-top: 10%;
+        }
+        section h1,
+        section h2 {
+            font-size: 4em;
+        }
+        #conteudo {
+            font-size: 20px;
+            margin-right: 25%;
+            margin-bottom: 5%;
+        }
+        body {
+            display: flex;
+        }
+        div {
+            display: inline;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+        }
+        div input {
+            width: 100%;
+            height: 50px;
+            border-radius: 40px;
+            font-size: 14px;
+            padding-left: 15px;
+            border-color: #D3B5B8;
+            border-style: solid;
+            outline: none;
+            max-width: 400px;
+            position: relative;
+            background-color: hsl(0, 100%, 98%);
+        }
+        div button {
+            position: absolute;
+            left: 90%;
+            border-radius: 30px;
+            border-color: transparent;
+            background: hsl(0, 6%, 24%);
+            background: linear-gradient(135deg, hsl(0, 80%, 86%), 50%, hsl(0, 74%, 74%));
+        }
+        div #error {
+            position: absolute;
+            left: 80%;
+            top: 0;
+            display: flex;
+        }
+        section #text {
+            display: flex;
+            justify-content: flex-start;
+            margin: 0px;
+            margin-top: 10px;
+            padding-left: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 15px;
+            color: #D3B5B8;
+        }
+    }

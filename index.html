@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <header> <img src="images/logo.svg" alt=""> </header>
+        <img id=mobile src="images/hero-mobile.jpg" alt="">
+
+        <h1> WE'RE</h1>
+        <H2>COMING </h2>
+        <h2> SOON</h2>
+        <P id="conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, possimus suscipit saepe dicta delectus sequi, eaque asperiores esse assumesection></p>
+        <div>
+
+
+            <input type="email" name="Email" id=email placeholder="Email Address">
+
+            <img id="error" src="" alt="">
+            <button onclick="validar()" type="submit">"<img src="images/icon-arrow.svg" alt="">"</button>
+
+
+
+
+        </div>
+        <p id="text"></p>
+
+    </section>
+    <img id=desktop src="images/hero-desktop.jpg" alt="">
+
+    <script>
+        function validar() {
+            let text1 = "Please Provide a valid email";
+
+            document.getElementById("text").innerHTML = text1
+
+            document.getElementById("error").src = "/images/icon-error.svg";
+
+        }
+    </script>
+</body>
+
+</html>
