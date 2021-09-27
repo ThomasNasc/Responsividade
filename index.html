@@ -12,8 +12,8 @@
 <body>
 
     <section>
-        <header> <img src="images/logo.svg" alt=""> </header>
-        <img id=mobile src="images/hero-mobile.jpg" alt="">
+        <header> <img src="./images/logo.svg" alt=""> </header>
+        <img id=mobile src="./images/hero-mobile.jpg" alt="">
 
         <h1> WE'RE</h1>
         <H2>COMING </h2>
@@ -25,7 +25,7 @@
             <input type="email" name="Email" id=email placeholder="Email Address">
 
             <img id="error" src="" alt="">
-            <button onclick="validar()" type="submit">"<img src="images/icon-arrow.svg" alt="">"</button>
+            <button onclick="validar()" type="submit">"<img src="./images/icon-arrow.svg" alt="">"</button>
 
 
 
@@ -34,7 +34,7 @@
         <p id="text"></p>
 
     </section>
-    <img id=desktop src="images/hero-desktop.jpg" alt="">
+    <img id=desktop src="./images/hero-desktop.jpg" alt="">
 
     <script>
         function validar() {
@@ -42,7 +42,7 @@
 
             document.getElementById("text").innerHTML = text1
 
-            document.getElementById("error").src = "/images/icon-error.svg";
+            document.getElementById("error").src = "./images/icon-error.svg";
 
         }
     </script>
