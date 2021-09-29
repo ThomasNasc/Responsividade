@@ -171,7 +171,7 @@
         }
         #desktop {
             display: flex;
-            width: 40%;
+            width: 50%;
         }
         section {
             flex-direction: column;
